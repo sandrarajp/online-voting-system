@@ -1,0 +1,13 @@
+{% autoescape off %}
+
+Hi {{user.firstname}}. Kindly click on the link below to verify your email address:
+
+{{ protocol }}://{{ domain }}{% url 'landing_page:verify_email' uidb64=uid token=token %}
+
+If you did not make this request, you can simply ignore this email.
+
+Sincerely,
+Poller
+
+{% endautoescape %}
+

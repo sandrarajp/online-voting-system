@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<htmllang="en">
+
+    <head>
+        <metacharset="UTF-8" />
+        <metaname="viewport"content="width=device-width, initial-scale=1.0" />
+        <title>{{ballot_title}}</title>
+    </head>
+
+    <body>
+        <p>
+            Hello <strong>{{voter.fullname}}</strong>. This is to inform you that voting for the <strong>{{ballot_title}}</strong> electinn has been closed. 
+        </p>
+        <p>
+            Click the link below to view election results:
+            <a href="{{protocol}}://{{domain}}{% url 'results_url' id=ballot_id %}">
+                {{protocol}}://{{domain}}{% url "results_url" id=ballot_id %}
+            </a>
+        </p>
+
+        <p>Sincerely,<br />Poller</p>
+    </body>
+
+</html>

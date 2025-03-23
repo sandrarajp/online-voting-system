@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<htmllang="en">
+
+    <head>
+        <metacharset="UTF-8" />
+        <metaname="viewport"content="width=device-width, initial-scale=1.0" />
+        <title>{{ballot_title}}</title>
+    </head>
+
+    <body>
+        <p>
+            Hello <strong>{{voter.fullname}}</strong>. You have been invited to participate in the <strong>{{ballot_title}}</strong>. 
+        </p>
+        <p>
+            Your voter id is: <strong>{{voter.voter_id}}</strong>.
+        </p>
+        <p>
+            Click the link below to cast your vote:
+            <a href="{{protocol}}://{{domain}}{% url 'election_url' id=ballot_id %}">
+                {{protocol}}://{{domain}}{% url "election_url" id=ballot_id %}
+            </a>
+        </p>
+
+        <p>Sincerely,<br />Poller</p>
+    </body>
+
+</html>

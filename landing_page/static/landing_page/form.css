@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #f6f8fa;
+}
+
+.form {
+    background-color: #ffffff;
+    max-width: 40rem;
+}
+
+.form-control {
+    background-color: #f6f8fa;
+}
+
+.btn-success {
+    background-color: #77de64;
+    border-color: #77de64;
+}
+
+.asteriskField {
+    color: tomato;
+    margin-left: 3px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.footer-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}

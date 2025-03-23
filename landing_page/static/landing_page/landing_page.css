@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;   
+}
+
+body {
+    background-color: #12151c !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.phone-image {
+    width: 15rem;
+}
+
+.poller-logo {
+    width: 10rem;
+    height: 3rem;
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+    color: white;
+}
+
+.icon-bg {
+    background-color: #0bacfa;
+}
+
+.page-card {
+    min-height: 22rem;
+}
+
+.footer-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
